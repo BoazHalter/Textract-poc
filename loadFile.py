@@ -10,6 +10,11 @@ def open_file_dialog():
 root = tk.Tk()
 root.title("File Upload")
 
+# Set the window size (width x height)
+window_width = 500
+window_height = 300
+root.geometry(f"{window_width}x{window_height}")
+
 # Create a label to display the selected file path
 label_file_path = tk.Label(root, text="No file selected")
 label_file_path.pack()
