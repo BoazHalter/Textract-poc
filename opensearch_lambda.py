@@ -3,7 +3,7 @@ from opensearchpy import OpenSearch
 host = 'https://search-textract-open-search-yalghvqfy6ul5wb2vfz7ca6iku.eu-central-1.es.amazonaws.com'
 port = 443
 auth = ('admin', 'admin') # For testing only. Don't store credentials in code.
-ca_certs_path = '/full/path/to/root-ca.pem' # Provide a CA bundle if you use intermediate CAs with your root CA.
+#ca_certs_path = '/full/path/to/root-ca.pem' # Provide a CA bundle if you use intermediate CAs with your root CA.
 
 # Optional client certificates if you don't want to use HTTP basic authentication.
 # client_cert_path = '/full/path/to/client.pem'
@@ -24,7 +24,7 @@ client = OpenSearch(
 )
 
 # Create an index with non-default settings.
-index_name = 'python-test-index'
+index_name = 'python-textract'
 index_body = {
   'settings': {
     'index': {
